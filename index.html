@@ -27,7 +27,6 @@
       margin: 0;
       font-family: 'Noto Sans SC', sans-serif;
       background-color: black;
-      background-image: none;
       color: var(--text-color);
       min-height: 100vh;
       display: flex;
@@ -48,7 +47,11 @@
       width: 100px;
       height: 100px;
       background: url('https://i.postimg.cc/sXKb3PMD/anime-girl.png') no-repeat center center/contain;
-      margin: 0 auto 1rem;
+      background: url('https://i.postimg.cc/sXKb3PMD/anime-girl.png'), url('local-avatar.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      background-color: #f0f0f0;
     }
 
     .search-box {
@@ -76,18 +79,18 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
       width: 100%;
       max-width: 960px;
-      padding: 0 1rem;
+      padding: 2rem;
     }
 
     .card {
       background: transparent;
       border: none;
-      border-radius: 1rem;
-      padding: 1rem;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
       text-align: center;
       color: var(--text-color);
       backdrop-filter: blur(10px);
@@ -176,6 +179,18 @@
     <a class="card" href="https://github.com" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-github"></i>
       <span>GitHub</span>
+    </a>
+    <a class="card" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-youtube"></i>
+      <span>YouTube</span>
+    </a>
+    <a class="card" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-twitter"></i>
+      <span>Twitter</span>
+    </a>
+    <a class="card" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-facebook"></i>
+      <span>Facebook</span>
     </a>
   </div>
 </body>
